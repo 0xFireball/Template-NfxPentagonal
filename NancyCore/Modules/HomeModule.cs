@@ -6,7 +6,8 @@ namespace NancyCore.Modules
     {
         public HomeModule()
         {
-            Get("/", _ => "Hello, World from NancyCore!");
+            Get("/", _ => View["index"]);
+            Get("/hello", _ => "Hello, World from NancyCore!");
         }
     }
 }
