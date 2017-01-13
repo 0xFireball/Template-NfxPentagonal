@@ -13,4 +13,4 @@ Another NancyFx template for .NET Core.
 - Comes with recommended structure
   - `Modules/` for Nancy Modules
   - `Views/` for Views
-  - `wwwroot/` for static content
+  - `content/` for static content
