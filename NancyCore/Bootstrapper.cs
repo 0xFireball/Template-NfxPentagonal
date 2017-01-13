@@ -13,15 +13,5 @@ namespace NancyCore
 
             // TODO: Your customization
         }
-
-        protected override void ConfigureConventions(NancyConventions conventions)
-        {
-            base.ConfigureConventions(conventions);
-            
-            // Configure static content
-            conventions.StaticContentsConventions.Add(
-                StaticContentConventionBuilder.AddDirectory("static", "wwwroot")
-            );
-        }
     }
 }
