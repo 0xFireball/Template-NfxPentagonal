@@ -9,16 +9,17 @@ namespace NancyCore
     {
         public static void Main(string[] args)
         {
+            var appDirectory = Directory.GetCurrentDirectory();
             var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(appDirectory)
                 .AddCommandLine(args)
-                .AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "hosting.json"), false)
+                .AddJsonFile(Path.Combine(appDirectory, "hosting.json"), true)
                 .Build();
 
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseConfiguration(config)
-                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseContentRoot(appDirectory)
                 .UseStartup<Startup>()
                 .Build();
             host.Run();
