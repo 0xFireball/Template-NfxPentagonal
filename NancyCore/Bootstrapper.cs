@@ -4,7 +4,7 @@ using Nancy.TinyIoc;
 
 namespace NancyCore
 {
-    class Bootstrapper : DefaultNancyBootstrapper
+    public class Bootstrapper : DefaultNancyBootstrapper
     {
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
         {
