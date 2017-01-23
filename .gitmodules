@@ -1,0 +1,3 @@
+[submodule "Libraries/Pentagonal"]
+	path = Libraries/Pentagonal
+	url = https://github.com/0xFireball/Pentagonal.git
