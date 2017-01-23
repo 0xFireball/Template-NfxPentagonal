@@ -14,7 +14,7 @@ namespace NfxPentagonalCore
             // TODO: Your customization
         }
 
-          public override void Configure(INancyEnvironment environment)
+        public override void Configure(INancyEnvironment environment)
         {
             base.Configure(environment);
 
