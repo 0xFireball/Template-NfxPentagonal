@@ -14,20 +14,20 @@ namespace NfxPentagonalCore
         {
             base.ApplicationStartup(container, pipelines);
 
+            // Install Pentagonal services
+
+            PentagonalServices.Enable(pipelines, new PentagonalConfiguration());
+            PentagonalAuthenticationServices.Enable(pipelines, new PentagonalAuthConfiguration
+            {
+                Database = new LiteDatabase("nfxpentagonalcore.lidb")
+            });
+
             // TODO: Your customization
         }
 
         public override void Configure(INancyEnvironment environment)
         {
             base.Configure(environment);
-
-            // Install Pentagonal services
-
-            PentagonalServices.Enable(pipelines, new PentagonalConfiguration());
-            PentagonalAuthenticationServices.Enable(pipelines, new PentagonalAuthConfiguration
-            {
-                Database = new LiteDatabase("omnibus-demo.lidb")
-            });
 
 #if DEBUG
             // If in Debug mode, set some options to speed up development
