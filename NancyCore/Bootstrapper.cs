@@ -3,7 +3,7 @@ using Nancy.Bootstrapper;
 using Nancy.Configuration;
 using Nancy.TinyIoc;
 
-namespace NancyCore
+namespace NfxPentagonalCore
 {
     public class Bootstrapper : DefaultNancyBootstrapper
     {

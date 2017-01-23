@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace NancyCore
+namespace NfxPentagonalCore
 {
     public class Program
     {

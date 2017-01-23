@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Nancy.Owin;
 
-namespace NancyCore
+namespace NfxPentagonalCore
 {
     public class Startup
     {

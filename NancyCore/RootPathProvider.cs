@@ -1,7 +1,7 @@
 using System.IO;
 using Nancy;
 
-namespace NancyCore
+namespace NfxPentagonalCore
 {
     public class CustomRootPathProvider : IRootPathProvider
     {
