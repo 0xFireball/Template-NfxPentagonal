@@ -28,7 +28,7 @@
   },
   "publishOptions": {
     "include": [
-      "wwwroot",
+      "content",
       "hosting.json",
       "Views"
     ]
